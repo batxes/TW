@@ -1,0 +1,89 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+
+      <h1>Contenido y utilidad de los archivos</h1>
+      <h2><a href="index.html">Index.html</a></h2>
+      <p>la página principal. Contiene noticias sobre la página, un encabezado con los enlances
+      más importantes y un pie de pagina. En la parte derecha de la página hay enlaces para crear
+      noticias y administrar estas que no se han habilitado.
+      </p>
+
+      <h2><a href="perfil.html">Perfil.html</a></h2>
+      <p>Aqui se reflejará toda la información del usuario y las listas guardadas. Se podran editar los datos personales
+      y se verán las listas del usuario. Estas listas se pueden borrar indicando el número de la lista.
+      También se pueden imprimir las listas click-ando en el botón de imprimir. La impresión solo imprime
+      los productos de tu lista.
+      </p>
+
+      <h2><a href="productos.html">Productos.html</a></h2>
+      <p>Aquí se mostrará la lista de los productos almacenados en el sistema mediante pestañas. También se da la posibilidad
+      de guardar productos mediante un formulario que se expande.</p>
+
+      <h2><a href="listas.html">Mis listas.html</a></h2>
+      <p>Te da opción a crearte una lista de productos. Se van insertando los productos uno a uno y la lista va incrementando.
+      Después podemos guardar la lista y esta aparecerá en nuestro perfil, siempre y cuando estemos registrados.
+      Esta lista se puede expandir o contraer y podemos encontrar un producto en él.
+      </p>
+            
+      <h2><a href="registro.html">Registro.html</a></h2>
+      <p>La página para que nuevos usuarios puedan registrarse en el sistema. Contiene java script para validación.</p>
+
+      <h2><a href="sesion.html">Sesión.html</a></h2>
+      <p>Página para poder identificarse en la página</p>
+      <h2><a href="ubicacion.html">Ubicación.html</a></h2>
+      <p>Página donde se podrá encontrar el supermercado o supermercados más cercanos a tu ubicación. Contiene geolocalización.
+      Podemos elegir un supermercado y nos muestra la ubicación de los supermercados en el mapa.</p>
+      <h2><a href="myCss.css">MyCss.css</a></h2>
+      <p>Es el archivo encargado de darle estilo a todas las páginas</p>
+      <h2><a href="mootree.css">mootree.css</a></h2>
+      <p>Css que utiliza el Jtree</p>
+      <h2><a href="map.css">map.css</a></h2>
+      <p>Css para google map</p>
+      <h2><a href="jquery-ui-1.8.11.custom.css">jquery-ui-1.8.11.custom.css</a></h2>
+      <p>Css para los botones, checkbox... que existen, con otros estilos.</p>
+      <h2>Java Script</h2>
+      <p>Existe básicamente un archivo JS para cada html. Después, el Jtree tiene su propio JS y 3 JS para Jquery y los diferentes themes</p>
+      <h2>Ajax</h2>
+      <p>Se ha usado Ajax para poder pasar los datos obtenidos mediante javascript en el Jtree al archivo listajax.php para su insercion</p>
+      en la base de datos.
+      <h2>Base de datos</h2>
+      <p>La base de datos usa 3 tablas: usuario, lista y productos, que están conectadas entre si mediante claves ajenas.</p>
+      <h1>Licencia y origen de los componentes</h1>
+      <p>Los botones que aparecen en el pie de página estan sacados desde <a href="http://www.addthis.com/">http://www.addthis.com/</a> </p>
+      <p>La imagen de ubicacion.txt se busco mediante google, y su dirección es <a href="http://www.juliangallo.com.ar/wp-content/uploads/2006/10/google%20maps%20taxis.jpg">http://www.juliangallo.com.ar/wp-content/uploads/2006/10/google%20maps%20taxis.jpg</a></p>
+      <p>El font está sacado desde <a href="http://fonts.googleapis.com/css?family=Chewy">http://fonts.googleapis.com/css?family=Chewy</a></p>
+      <p>Y la idea del estilo de la página se cogio desde <a href="http://www.freecsstemplates.org/">http://www.freecsstemplates.org/</a></p>
+      <h1>Entorno recomendado para pruebas, y cualquier paso necesario para realizarlas</h1>
+      <p>El entorno utilizado para realizar el trabajo y sus correspondientes pruebas ha sido <strong>NetBeans</strong></p>
+      
+      <h2>Conclusiones de la tercera entrega.</h2>
+      <p>Por falta de tiempo no se han podido realizar varias ideas que desde un principio se tenían en mente.
+      Toda la parte del administrador está sin implementar pero lo realizaría añadiendo un campo "isAdmin" a la tabla
+      de usuarios y agregando un usuario admin a mano en la base da datos.
+      Mediante la variable $_SESSION, cuando se iniciase la sesión como administrador, se verían enlaces que como usuario
+      normal no se podrían ver, y en estos enlaces hacer las acciones de delete, update e insert contra la base de datos.
+      Todo esto se realizaría para los usuarios, productos e listas.</p>
+         <p>Tampoco se ha implementado mediante googlemaps el camino más corto desde la posición del usuario al supermercado
+             más cercano. No he encontrado información de como escoger el "mark" más cercano y tampoco como intregarlo con la geolocalización
+      </p>
+      <p>Por último tampoco se ha implementado el resultado de la lista de la compra más barata. Lo realizaría haciendo varios SELECT
+      contra la base de datos, seleccionando el producto con su unidad y precio donde los parametros serían los distintos supermercados. Despúes, tendría
+      una variable para cada supermercado dónde se iría sumando el precio. AL final tendría el valor de la lista en dinstintos supermercados
+      y con esto compararía y se lo mostraría al usuarios.
+      </p>
+      <p>En mi opinión está asignatura ha sido de las más valiosas de la carrera porque he aprendido muchisimo
+          sobre php, javascript Ajax y el uso de estas tecnologías para crear páginas web. Me parece una vergüenza que
+      los lenguajes de programación web se tengan que dar en un seminario. Un Ingeniero informático debería
+      de salir de la carrera sabiendolo.</p>
+
+  </body>
+</html>
